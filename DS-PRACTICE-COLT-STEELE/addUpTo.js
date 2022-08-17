@@ -10,4 +10,9 @@ function addUpTo(n) {
 
 console.log(addUpTo(6))
 
+// Second Way (shorter method)
+function addUpToSecond(n) {
+    return n * (n + 1) / 2;
+}
 
+console.log(addUpToSecond(6))
