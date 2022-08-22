@@ -7,3 +7,5 @@ function printAllPairs(n) {
   }
 
   console.log(printAllPairs(8));
+
+  //O(n^2)
