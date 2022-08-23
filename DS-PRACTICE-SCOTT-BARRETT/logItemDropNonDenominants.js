@@ -10,4 +10,5 @@ function logItems(n) {
     }
 }
 
-logItems(10)
+console.log(logItems(10))
+//O(n^2 + n) -> drop non denominates -> becomes O(n)
