@@ -1,6 +1,6 @@
 //when you declare a class, always capitalize the name of the class
 class Cookie {
-    //classes always have a constructor; this is what creates the new cokies form the class
+    //classes always have a constructor; this is what creates the new cokies from the class
     constructor(color) {
         this.color = color
     }
