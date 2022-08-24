@@ -1,3 +1,4 @@
+//when you declare a class, always capitalize the name of the class
 class Cookie {
     constructor(color) {
         this.color = color
