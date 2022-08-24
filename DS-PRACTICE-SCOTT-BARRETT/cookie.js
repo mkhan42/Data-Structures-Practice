@@ -3,7 +3,7 @@ class Cookie {
     //classes always have a constructor; this is what creates the new cokies from the class
     constructor(color) {
         this.color = color
-        //‘this’ keyword refers to a specific item created in the class
+        //‘this’ keyword refers to a specific item created in the class; we can have multiple items, so this means THIS specific one
     }
     getColor() {
         return this.color
