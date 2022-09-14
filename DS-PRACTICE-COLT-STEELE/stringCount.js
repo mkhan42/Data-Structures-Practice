@@ -10,3 +10,8 @@ charCount("hellp") //{h:1, e:1, l:2, o:1}
 
 charCount("") //what are we returning?
 */
+
+function charCount(str) {
+    //do something
+    //return an object with keys that are lowercase alphanumeric characters in the string; values should be the counts
+}
