@@ -14,4 +14,7 @@ charCount("") //what are we returning?
 function charCount(str) {
     //do something
     //return an object with keys that are lowercase alphanumeric characters in the string; values should be the counts
+    //make object to return at end
+    //loop over string
+    //return object at end
 }
