@@ -24,17 +24,20 @@ function charCount(str) {
     let myStr = str.split('')
 
     const letterFreq = myStr.forEach((element) => {
-        // count[element] = count[element] ? count[element] + 1 : 1;
 
         element = element.toLowerCase()
 
-        if(count[element]) {
-            count[element] = count[element] + 1;
+        if(/[a-z0-9]/.test(element)) {
+            count[element] = count[element] ? count[element] + 1 : 1;
         }
 
-        else {
-            count[element] = 1;
-        }
+        // if(count[element]) {
+        //     count[element] = count[element] + 1;
+        // }
+
+        // else {
+        //     count[element] = 1;
+        // }
     })
 
    return count
