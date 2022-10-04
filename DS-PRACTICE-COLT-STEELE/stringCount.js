@@ -25,14 +25,15 @@ function charCount(str) {
 
     const letterFreq = myStr.forEach((element) => {
 
-        element = element.toLowerCase()
 
-        if(/[a-z0-9]/.test(element)) {
-            count[element] = count[element] ? count[element] + 1 : 1;
+        if(isAlphaNumeric(element)) {
+            // count[element] = count[element] ? count[element] + 1 : 1;
+            element = element.toLowerCase()
+            count[element] = ++count[element] || 1
         }
 
-        // if(count[element]) {
-        //     count[element] = count[element] + 1;
+        // if(count[element] > 0) {
+        //     count[element]++;
         // }
 
         // else {
@@ -42,5 +43,18 @@ function charCount(str) {
 
    return count
 }
+
+function isAlphaNumeric(char) {
+    let code = char.charCodeAt(0);
+    if(!(code > 47 && code < 58) &&
+        !(code > 64 && code < 91) &&
+        !(code > 96 && code < 123)) {
+            return false
+    }
+    
+    return true;
+}
+
+// charCodeAt(0)
 
 console.log(charCount('hello my Name is n...'))
