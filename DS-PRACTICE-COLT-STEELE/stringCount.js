@@ -39,7 +39,7 @@ function charCount(str) {
         // else {
         //     count[element] = 1;
         // }
-    })
+    })      
 
    return count
 }
